@@ -15,7 +15,7 @@ const dowloads = [{
     },
     {
         titulo: 'Winrar',
-        imagem: 'https://raw.githubusercontent.com/RafaelMiranda21/support/main/src/imagens/apps/winRAR.png',
+        imagem: 'https://github.com/RafaelMiranda21/support/blob/main/src/imagens/apps/WinRAR.png?raw=true',
         end: 'src/dowloads/winrar-x64.exe'
     },
     {
