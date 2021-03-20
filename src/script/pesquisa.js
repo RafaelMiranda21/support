@@ -26,12 +26,12 @@ const dowloads = [{
     {
         titulo: 'Sankhya 64x',
         imagem: 'https://github.com/RafaelMiranda21/support/blob/main/src/imagens/apps/Sankhya.png?raw=true',
-        end: 'https://drive.google.com/file/d/1UhIseknf5LnH6od-S8kcwlLbjcZ836iK/view?usp=sharing'
+        end: 'https://drive.google.com/u/1/uc?id=1UhIseknf5LnH6od-S8kcwlLbjcZ836iK&export=download'
     },
     {
         titulo: 'Sankhya 32x',
         imagem: 'https://github.com/RafaelMiranda21/support/blob/main/src/imagens/apps/Sankhya.png?raw=true',
-        end: 'https://drive.google.com/file/d/1xYQ4G1fVxbKEPf2fdgKtml-0SxV1zx4Z/view?usp=sharing'
+        end: 'https://drive.google.com/u/1/uc?id=1xYQ4G1fVxbKEPf2fdgKtml-0SxV1zx4Z&export=download'
     },
     {
         titulo: 'Foxit Reader',
@@ -56,7 +56,7 @@ function buscarPesquisa(p) {
     dowload.map((val) => {
         conteudo.innerHTML += `
             <div class="conteudo-dowload">
-            <a href="` + val.end + `">
+            <a href="` + val.end + `" target="_blanck">
             <img src="` + val.imagem + `" />
              <h1>` + val.titulo + `</h1>
              </a>
