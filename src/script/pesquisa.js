@@ -22,7 +22,22 @@ const dowloads = [{
         titulo: 'Adobe Reader',
         imagem: 'https://raw.githubusercontent.com/RafaelMiranda21/support/main/src/imagens/apps/adobereader.png',
         end: 'src/dowloads/readerdc.exe'
-    }
+    },
+    {
+        titulo: 'Sankhya 64x',
+        imagem: 'https://github.com/RafaelMiranda21/support/blob/main/src/imagens/apps/Sankhya.png?raw=true',
+        end: 'https://drive.google.com/file/d/1UhIseknf5LnH6od-S8kcwlLbjcZ836iK/view?usp=sharing'
+    },
+    {
+        titulo: 'Sankhya 32x',
+        imagem: 'https://github.com/RafaelMiranda21/support/blob/main/src/imagens/apps/Sankhya.png?raw=true',
+        end: 'https://drive.google.com/file/d/1xYQ4G1fVxbKEPf2fdgKtml-0SxV1zx4Z/view?usp=sharing'
+    },
+    {
+        titulo: 'Foxit Reader',
+        imagem: 'https://github.com/RafaelMiranda21/support/blob/main/src/imagens/apps/Foxit.png?raw=true',
+        end: 'https://drive.google.com/file/d/1ZOSsBpGY_3uz1ePp-bA_noYZInCGTEm9/view?usp=sharing'
+    },
 ]
 
 document.getElementById('formulario').addEventListener('submit', pesquisa);

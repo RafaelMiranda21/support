@@ -64,6 +64,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .conteudo-dowload {
@@ -75,7 +76,6 @@
     border-radius: 2rem;
     border: 1px solid #fff;
     transition: background ease 800ms;
-    flex-wrap: wrap;
 }
 
 .conteudo-dowload:hover {
