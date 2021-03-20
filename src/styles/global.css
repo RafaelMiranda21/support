@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+input,
+button,
+textarea,
+a {
+    font: 400 16px Public Sans, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+}
+
+a:hover {
+    color: #fff;
+}
