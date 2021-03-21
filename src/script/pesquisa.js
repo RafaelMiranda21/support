@@ -41,7 +41,7 @@ const dowloads = [{
 ]
 
 document.getElementById('formulario').addEventListener('submit', pesquisa);
-var conteudo = document.getElementById('dowloads');
+var areaDowload = document.getElementById('area-dowload');
 
 function pesquisa(e) {
     var pesquisar = document.getElementById('pesquisar').value;
@@ -51,25 +51,89 @@ function pesquisa(e) {
 
 function buscarPesquisa(p) {
     estiliza();
-    conteudo.innerHTML = "";
     const dowload = dowloads.filter(d => d.titulo.toUpperCase().includes(p.toUpperCase()));
-    dowload.map((val) => {
-        conteudo.innerHTML += `
-            <div class="conteudo-dowload">
-            <a href="` + val.end + `" target="_blanck">
-            <img src="` + val.imagem + `" />
-             <h1>` + val.titulo + `</h1>
-             </a>
-            </div>
+    if (dowload.length == 0) {
+        if (document.getElementById('dowloads-container')) {
+            document.getElementById('area-dowload').removeChild(document.getElementById('dowloads-container'));
+        } else {
+            document.getElementById('area-dowload').removeChild(document.getElementById('dowloads-container'));
+        }
+        areaDowload.innerHTML += `
+          <div class="mensagem-container">
+              <div class="mensagem-wrapper">
+                <img src="../imagens/Mater.png"/>
+                <div class="mensagem">
+                    <h1>Desculpe Dowload não encontrado</h1>
+                    <h3>Chame o Rafael para adicionar o dowload</h3>
+                </div>
+                
+              </div>       
+          </div>    
         `;
-    });
+    } else {
+        if (dowload.length > 5) {
+            document.getElementById('area-dowload').removeChild(document.getElementById('dowloads-container'));
+            areaDowload.innerHTML += `
+        <div class="swiper-container" id="dowloads-container">
+            <div class="swiper-wrapper" id="swiper-wrapper">
 
+            </div>
+        </div>
+        `;
+            var conteudoSwiper = document.getElementById('swiper-wrapper');
+            dowload.map((val) => {
+                conteudoSwiper.innerHTML += `
+                    <div class="swiper-slide">
+                        <a href="` + val.end + `" target="_blanck">
+                        <img src="` + val.imagem + `" />
+                        <h1>` + val.titulo + `</h1>
+                        </a>
+                    </div>
+            `;
+            });
+            var swiper = new Swiper('.swiper-container', {
+                effect: 'coverflow',
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                coverflowEffect: {
+                    rotate: 0,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 2,
+                    slideShadows: true,
+                },
+                loop: true,
+            });
+        } else {
+            document.getElementById('area-dowload').removeChild(document.getElementById('dowloads-container'));
+            areaDowload.innerHTML += `
+        <div class="dowloads-container" id="dowloads-container">
+            <div class="dowloads-wrapper" id="dowloads-wrapper">
+            </div>
+        </div>
+        `;
+            var conteudoDowload = document.getElementById('dowloads-wrapper');
+            dowload.map((val) => {
+                conteudoDowload.innerHTML += `
+                        <div class="conteudo-dowload">
+                            <a href="` + val.end + `" target="_blanck">
+                            <img src="` + val.imagem + `" />
+                            <h1>` + val.titulo + `</h1>
+                            </a>
+                        </div>  
+        `;
+            });
+        }
+    }
 }
+
+
 
 function estiliza() {
     var formulario = document.getElementById('formulario');
     formulario.style.right = "2%";
     formulario.style.top = "5%";
     formulario.style.transition = "all linear 500ms";
-    conteudo.style.zIndex = '999';
+    areaDowload.style.zIndex = "999";
 }
