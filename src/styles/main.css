@@ -142,8 +142,12 @@
 }
 
 .mensagem-wrapper img {
-    width: 20rem;
-    height: 15rem;
+    width: 19rem;
+    height: 13rem;
+}
+
+.mensagem {
+    padding-left: 2rem;
 }
 
 @media screen and (max-width: 320px) {
