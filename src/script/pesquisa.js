@@ -108,12 +108,13 @@ function buscarPesquisa(p) {
     estiliza();
     const dowload = dowloads.filter(d => d.titulo.toUpperCase().includes(p.toUpperCase()));
     if (dowload.length == 0) {
-        if (document.getElementById('dowloads-container')) {
-            document.getElementById('area-dowload').removeChild(document.getElementById('dowloads-container'));
-        } else {
-            document.getElementById('area-dowload').removeChild(document.getElementById('dowloads-container'));
-        }
-        areaDowload.innerHTML += `
+        if (!document.getElementById('mensagem-container')) {
+            if (document.getElementById('dowloads-container')) {
+                document.getElementById('area-dowload').removeChild(document.getElementById('dowloads-container'));
+            } else {
+                document.getElementById('area-dowload').removeChild(document.getElementById('dowloads-container'));
+            }
+            areaDowload.innerHTML += `
           <div class="mensagem-container" id="mensagem-container">
               <div class="mensagem-wrapper" >
                 <img src="https://github.com/RafaelMiranda21/support/blob/main/src/imagens/Mater.png?raw=true"/>
@@ -125,6 +126,7 @@ function buscarPesquisa(p) {
               </div>       
           </div>    
         `;
+        }
     } else {
         if (dowload.length > 5 || window.innerWidth < 1025) {
             if (document.getElementById('mensagem-container')) {
