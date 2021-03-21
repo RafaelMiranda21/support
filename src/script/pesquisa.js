@@ -59,8 +59,8 @@ function buscarPesquisa(p) {
             document.getElementById('area-dowload').removeChild(document.getElementById('dowloads-container'));
         }
         areaDowload.innerHTML += `
-          <div class="mensagem-container">
-              <div class="mensagem-wrapper">
+          <div class="mensagem-container" id="mensagem-container">
+              <div class="mensagem-wrapper" >
                 <img src="https://github.com/RafaelMiranda21/support/blob/main/src/imagens/Mater.png?raw=true"/>
                 <div class="mensagem">
                     <h1>Desculpe Dowload não encontrado</h1>
@@ -71,8 +71,13 @@ function buscarPesquisa(p) {
           </div>    
         `;
     } else {
-        if (dowload.length > 5) {
-            document.getElementById('area-dowload').removeChild(document.getElementById('dowloads-container'));
+        if (dowload.length > 5 || window.innerWidth < 1025) {
+            if (document.getElementById('mensagem-container')) {
+                document.getElementById('area-dowload').removeChild(document.getElementById('mensagem-container'));
+            } else {
+                document.getElementById('area-dowload').removeChild(document.getElementById('dowloads-container'));
+            }
+
             areaDowload.innerHTML += `
         <div class="swiper-container" id="dowloads-container">
             <div class="swiper-wrapper" id="swiper-wrapper">
@@ -103,10 +108,15 @@ function buscarPesquisa(p) {
                     modifier: 2,
                     slideShadows: true,
                 },
-                loop: true,
+                // loop: true,
             });
         } else {
-            document.getElementById('area-dowload').removeChild(document.getElementById('dowloads-container'));
+            if (document.getElementById('mensagem-container')) {
+                document.getElementById('area-dowload').removeChild(document.getElementById('mensagem-container'));
+            } else {
+                document.getElementById('area-dowload').removeChild(document.getElementById('dowloads-container'));
+            }
+
             areaDowload.innerHTML += `
         <div class="dowloads-container" id="dowloads-container">
             <div class="dowloads-wrapper" id="dowloads-wrapper">

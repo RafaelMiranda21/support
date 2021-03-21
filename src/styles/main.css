@@ -88,7 +88,7 @@
     height: 7rem !important;
     display: flex;
     background: rgba(221, 221, 221, 0.418);
-    margin: 2rem;
+    margin: 17rem 2rem 0 2rem;
     border-radius: 2rem;
     border: 1px solid #fff;
     transition: background ease 800ms;
@@ -139,4 +139,9 @@
     align-items: center;
     width: 60%;
     height: 40%;
+}
+
+.mensagem-wrapper img {
+    width: 20rem;
+    height: 15rem;
 }
