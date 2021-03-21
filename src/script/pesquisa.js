@@ -166,7 +166,7 @@ function buscarPesquisa(p) {
             var conteudoDowload = document.getElementById('dowloads-wrapper');
             dowload.map((val) => {
                 conteudoDowload.innerHTML += `
-                        <div class="conteudo-dowload">
+                        <div class="conteudo-dowload" id="conteudo-dowload">
                             <a href="` + val.end + `" target="_blanck">
                             <img src="` + val.imagem + `" />
                             <h1>` + val.titulo + `</h1>
