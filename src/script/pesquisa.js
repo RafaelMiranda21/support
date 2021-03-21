@@ -83,6 +83,16 @@ const dowloads = [{
         imagem: 'https://github.com/RafaelMiranda21/support/blob/main/src/imagens/apps/driverBooster.png?raw=true',
         end: 'https://drive.google.com/u/1/uc?id=1nbffLH_utv0plIhoRcbst8xsKvcua1kG&export=download'
     },
+    {
+        titulo: 'GO-Global',
+        imagem: 'https://github.com/RafaelMiranda21/support/blob/main/src/imagens/apps/goGlobal.png?raw=true',
+        end: 'src/dowloads/go-global.exe'
+    },
+    {
+        titulo: 'AnyDesk',
+        imagem: 'https://github.com/RafaelMiranda21/support/blob/main/src/imagens/apps/anydesk.png?raw=true',
+        end: 'src/dowloads/AnyDesk.exe'
+    },
 ]
 
 document.getElementById('formulario').addEventListener('submit', pesquisa);
