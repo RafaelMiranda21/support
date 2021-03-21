@@ -150,11 +150,37 @@
     .procura {
         right: 8%;
     }
+    .mensagem-wrapper {
+        flex-direction: column;
+    }
+    .mensagem-wrapper img {
+        width: 7rem;
+        height: 5rem;
+    }
+    .mensagem h1 {
+        font-size: 1.3rem;
+    }
+    .mensagem h3 {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (min-width: 321px) and (max-width:480px) {
     .procura {
         right: 22%;
+    }
+    .mensagem-wrapper img {
+        width: 9rem;
+        height: 7rem;
+    }
+    .mensagem {
+        padding-left: 1rem;
+    }
+    .mensagem h1 {
+        font-size: 1.3rem;
+    }
+    .mensagem h3 {
+        font-size: 1rem;
     }
 }
 
@@ -162,10 +188,36 @@
     .procura {
         right: 30%;
     }
+    .mensagem-wrapper img {
+        width: 12rem;
+        height: 9rem;
+    }
+    .mensagem {
+        padding-left: 1rem;
+    }
+    .mensagem h1 {
+        font-size: 1.5rem;
+    }
+    .mensagem h3 {
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width:1024px) {
     .procura {
         right: 35%;
+    }
+    .mensagem-wrapper img {
+        width: 15rem;
+        height: 12rem;
+    }
+    .mensagem {
+        padding-left: 1rem;
+    }
+    .mensagem h1 {
+        font-size: 1.5rem;
+    }
+    .mensagem h3 {
+        font-size: 1.2rem;
     }
 }
