@@ -145,3 +145,27 @@
     width: 20rem;
     height: 15rem;
 }
+
+@media screen and (max-width: 320px) {
+    .procura {
+        right: 8%;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width:480px) {
+    .procura {
+        right: 22%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width:768px) {
+    .procura {
+        right: 30%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width:1024px) {
+    .procura {
+        right: 35%;
+    }
+}
