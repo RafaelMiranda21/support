@@ -154,6 +154,13 @@
     .procura {
         right: 8%;
     }
+    .swiper-slide {
+        width: 12rem !important;
+        height: 4rem !important;
+    }
+    .swiper-slide h1 {
+        font-size: .8rem;
+    }
     .mensagem-wrapper {
         flex-direction: column;
     }
@@ -172,6 +179,13 @@
 @media screen and (min-width: 321px) and (max-width:480px) {
     .procura {
         right: 22%;
+    }
+    .swiper-slide {
+        width: 12rem !important;
+        height: 4rem !important;
+    }
+    .swiper-slide h1 {
+        font-size: .8rem;
     }
     .mensagem-wrapper img {
         width: 9rem;
