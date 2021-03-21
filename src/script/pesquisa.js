@@ -38,6 +38,46 @@ const dowloads = [{
         imagem: 'https://github.com/RafaelMiranda21/support/blob/main/src/imagens/apps/Foxit.png?raw=true',
         end: 'https://drive.google.com/file/d/1ZOSsBpGY_3uz1ePp-bA_noYZInCGTEm9/view?usp=sharing'
     },
+    {
+        titulo: 'Catalogo Eaton',
+        imagem: 'https://github.com/RafaelMiranda21/support/blob/main/src/imagens/apps/eaton.png?raw=true',
+        end: 'https://drive.google.com/u/1/uc?id=1bgrzTlPMO9xgk4ZzjDX4bK6AsaHv76DI&export=download'
+    },
+    {
+        titulo: 'Catalogo MWM',
+        imagem: 'https://github.com/RafaelMiranda21/support/blob/main/src/imagens/apps/mwm.png?raw=true',
+        end: 'https://drive.google.com/u/1/uc?id=1PuPYmjRJfAOqY7je6zKimIFb_z7cnDEP&export=download'
+    },
+    {
+        titulo: 'Catalogo Ford',
+        imagem: 'https://github.com/RafaelMiranda21/support/blob/main/src/imagens/apps/ford.png?raw=true',
+        end: 'https://drive.google.com/u/1/uc?id=1oR6O_YSE7NiSruGUwxX1SWx_zNQa7igx&export=download'
+    },
+    {
+        titulo: 'Catalogo Wolks',
+        imagem: 'https://github.com/RafaelMiranda21/support/blob/main/src/imagens/apps/wolks.png?raw=true',
+        end: 'https://drive.google.com/u/1/uc?id=1a_N3huRBUGfuTS5zSe1GbG3lT9W_V60B&export=download'
+    },
+    {
+        titulo: 'VMware Player',
+        imagem: 'https://github.com/RafaelMiranda21/support/blob/main/src/imagens/apps/VMware.png?raw=true',
+        end: 'https://drive.google.com/u/1/uc?id=1ylfC8tGRy5hw8n1WnIlpjX1xKqkAW2zX&export=download'
+    },
+    {
+        titulo: 'Libre Office x64',
+        imagem: 'https://github.com/RafaelMiranda21/support/blob/main/src/imagens/apps/libreoffice.png?raw=true',
+        end: 'https://drive.google.com/u/1/uc?id=1tKucQR-KCSXJEhTh_dRMsu3v0gb8JBeA&export=download'
+    },
+    {
+        titulo: 'Libre Office x86',
+        imagem: 'https://github.com/RafaelMiranda21/support/blob/main/src/imagens/apps/libreoffice.png?raw=true',
+        end: 'https://drive.google.com/u/1/uc?id=1mXPlkS3-BDIjMkCgdjieWVvQcxz9REDZ&export=download'
+    },
+    {
+        titulo: 'LightShot',
+        imagem: 'https://github.com/RafaelMiranda21/support/blob/main/src/imagens/apps/lightshot.png?raw=true',
+        end: 'src/dowloads/lightshot.exe'
+    },
 ]
 
 document.getElementById('formulario').addEventListener('submit', pesquisa);
