@@ -78,6 +78,11 @@ const dowloads = [{
         imagem: 'https://github.com/RafaelMiranda21/support/blob/main/src/imagens/apps/lightshot.png?raw=true',
         end: 'src/dowloads/lightshot.exe'
     },
+    {
+        titulo: 'Driver Booster',
+        imagem: 'https://github.com/RafaelMiranda21/support/blob/main/src/imagens/apps/driverBooster.png?raw=true',
+        end: 'https://drive.google.com/u/1/uc?id=1nbffLH_utv0plIhoRcbst8xsKvcua1kG&export=download'
+    },
 ]
 
 document.getElementById('formulario').addEventListener('submit', pesquisa);
