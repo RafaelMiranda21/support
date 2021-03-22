@@ -41,12 +41,12 @@ const dowloads = [{
     {
         titulo: 'Catalogo Eaton',
         imagem: 'https://github.com/RafaelMiranda21/support/blob/main/src/imagens/apps/eaton.png?raw=true',
-        end: 'https://drive.google.com/u/1/uc?id=1bgrzTlPMO9xgk4ZzjDX4bK6AsaHv76DI&export=download'
+        end: 'https://drive.google.com/u/1/uc?id=1NykLQd_QxlnUM4MQVDMdksaU7J95wcUh&export=download'
     },
     {
         titulo: 'Catalogo MWM',
         imagem: 'https://github.com/RafaelMiranda21/support/blob/main/src/imagens/apps/mwm.png?raw=true',
-        end: 'https://drive.google.com/u/1/uc?id=1PuPYmjRJfAOqY7je6zKimIFb_z7cnDEP&export=download'
+        end: 'https://drive.google.com/u/1/uc?id=102lH1C4WWXYNA93SG2hQ0JAJjeIHMdET&export=download'
     },
     {
         titulo: 'Catalogo Ford',
