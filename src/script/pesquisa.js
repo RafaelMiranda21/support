@@ -93,6 +93,11 @@ const dowloads = [{
         imagem: 'https://github.com/RafaelMiranda21/support/blob/main/src/imagens/apps/anydesk.png?raw=true',
         end: 'src/dowloads/AnyDesk.exe'
     },
+    {
+        titulo: 'Ocam',
+        imagem: 'https://github.com/RafaelMiranda21/support/blob/main/src/imagens/apps/ocam.png?raw=true',
+        end: 'src/dowloads/oCam.exe'
+    },
 ]
 
 document.getElementById('formulario').addEventListener('submit', pesquisa);
