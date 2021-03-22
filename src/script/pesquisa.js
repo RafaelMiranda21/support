@@ -36,7 +36,7 @@ const dowloads = [{
     {
         titulo: 'Foxit Reader',
         imagem: 'https://github.com/RafaelMiranda21/support/blob/main/src/imagens/apps/Foxit.png?raw=true',
-        end: 'https://drive.google.com/file/d/1ZOSsBpGY_3uz1ePp-bA_noYZInCGTEm9/view?usp=sharing'
+        end: 'https://drive.google.com/u/1/uc?id=1ZOSsBpGY_3uz1ePp-bA_noYZInCGTEm9&export=download'
     },
     {
         titulo: 'Catalogo Eaton',
